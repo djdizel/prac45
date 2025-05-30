@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace prac45
 {
-    class Company<P>
+    class Point<T>
     {
-        public P CEO { get; }
-        public Company(P ceo)
+        public T X { get; set; }
+        public T Y { get; set; }
+        public Point(T x, T y)
         {
-            CEO = ceo;
+            X = x;
+            Y = y;
         }
-        }
+    }
 }
